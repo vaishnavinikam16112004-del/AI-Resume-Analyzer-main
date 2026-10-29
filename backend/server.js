@@ -13,6 +13,9 @@ import authRoutes from "./routes/auth.js";
 dotenv.config();
 
 const app = express();
+app.get('/', (req, res) => {
+    res.send('AI Resume Analyzer Backend is Running Successfully!');
+});
 
 const PORT = process.env.PORT || 5000;
 
